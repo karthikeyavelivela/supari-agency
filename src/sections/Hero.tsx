@@ -1,10 +1,12 @@
 'use client'
 
+import dynamic from 'next/dynamic'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
-import NeuralNetworkBackground from '@/components/NeuralNetworkBackground'
 import gsap from 'gsap'
+
+const NeuralNetworkBackground = dynamic(() => import('@/components/NeuralNetworkBackground'), { ssr: false })
 
 const MagneticButton = ({ children, className }: { children: React.ReactNode, className?: string }) => {
   const ref = useRef<HTMLButtonElement>(null)

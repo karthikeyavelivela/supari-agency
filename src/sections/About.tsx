@@ -1,8 +1,16 @@
 'use client'
 
+import React from 'react'
 import { motion } from 'framer-motion'
 
-export default function About() {
+const About = () => {
+  const stats = [
+    { label: 'Precision', value: '100%' },
+    { label: 'Uptime', value: '99.9%' },
+    { label: 'Security', value: 'Elite' },
+    { label: 'Vision', value: 'Future' }
+  ]
+
   return (
     <section id="about" className="relative py-32 bg-[#0a0a0a] overflow-hidden">
       <div className="container px-6 mx-auto relative z-10">
@@ -22,11 +30,11 @@ export default function About() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-5xl md:text-8xl font-heading font-black text-white tracking-tighter uppercase leading-[0.85]"
+              className="text-5xl md:text-8xl font-heading font-black text-white tracking-tighter uppercase leading-[0.9]"
             >
               Engineering <br />
               <span className="text-white/10 italic">Pure Excellence.</span>
-            </h2>
+            </motion.h2>
 
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -46,12 +54,7 @@ export default function About() {
 
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
-              {[
-                { label: 'Precision', value: '100%' },
-                { label: 'Uptime', value: '99.9%' },
-                { label: 'Security', value: 'Elite' },
-                { label: 'Vision', value: 'Future' }
-              ].map((stat, i) => (
+              {stats.map((stat, i) => (
                 <motion.div
                   key={stat.label}
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -61,21 +64,21 @@ export default function About() {
                   className="p-10 bg-[#111] border border-white/5 rounded-[2rem] space-y-2 group hover:border-accent/30 transition-all duration-500"
                 >
                   <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/30 group-hover:text-accent transition-colors">{stat.label}</span>
-                  <div className="text-4xl font-heading font-black text-white">{stat.stat?.value || stat.value}</div>
+                  <div className="text-4xl font-heading font-black text-white">{stat.value}</div>
                 </motion.div>
               ))}
             </div>
             
-            {/* Abstract Graphic */}
             <div className="absolute -top-10 -right-10 w-64 h-64 bg-accent/10 rounded-full blur-[80px] pointer-events-none" />
           </div>
         </div>
       </div>
 
-      {/* Background Grid Lines */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 grid-background scale-150 rotate-12" />
       </div>
     </section>
   )
 }
+
+export default About

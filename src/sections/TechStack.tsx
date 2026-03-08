@@ -1,8 +1,9 @@
 'use client'
 
+import React from 'react'
 import { motion } from 'framer-motion'
 import { 
-  SiNextdotjs, SiReact, SiPython, SiFastapi, SiPostgresql, SiDocker, SiAmazonwebservices 
+  SiNextdotjs, SiReact, SiPython, SiFastapi, SiPostgresql, SiDocker, SiVercel 
 } from 'react-icons/si'
 
 const technologies = [
@@ -12,7 +13,7 @@ const technologies = [
   { name: 'FastAPI', icon: SiFastapi },
   { name: 'PostgreSQL', icon: SiPostgresql },
   { name: 'Docker', icon: SiDocker },
-  { name: 'AWS', icon: SiAmazonwebservices },
+  { name: 'Vercel', icon: SiVercel },
 ]
 
 export default function TechStack() {

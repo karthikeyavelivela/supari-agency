@@ -5,8 +5,6 @@ import { motion } from 'framer-motion'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger)
-
 const stories = [
   {
     phase: "01. PROBLEM",
@@ -35,29 +33,33 @@ export default function ScrollStorytelling() {
   const sectionsRef = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      sectionsRef.current.forEach((section, i) => {
-        if (!section) return
-        
-        gsap.fromTo(section, 
-          { opacity: 0, y: 100 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: section,
-              start: "top 70%",
-              end: "top 30%",
-              scrub: 1,
+    if (typeof window !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger)
+      
+      const ctx = gsap.context(() => {
+        sectionsRef.current.forEach((section, i) => {
+          if (!section) return
+          
+          gsap.fromTo(section, 
+            { opacity: 0, y: 100 },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: section,
+                start: "top 70%",
+                end: "top 30%",
+                scrub: 1,
+              }
             }
-          }
-        )
-      })
-    }, containerRef)
+          )
+        })
+      }, containerRef)
 
-    return () => ctx.revert()
+      return () => ctx.revert()
+    }
   }, [])
 
   return (
@@ -88,7 +90,6 @@ export default function ScrollStorytelling() {
         </div>
       </div>
 
-      {/* Floating abstract particles tied to scroll */}
       <div className="absolute top-1/2 left-1/4 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[120px] pointer-events-none mix-blend-screen" />
     </section>
   )
