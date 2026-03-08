@@ -22,9 +22,6 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Agency | Premium Development Studio",
   description: "Engineering AI, SaaS & Secure Digital Products",
-  icons: {
-    icon: '/favicon.ico',
-  },
 };
 
 export default function RootLayout({
