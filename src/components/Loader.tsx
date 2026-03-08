@@ -7,8 +7,10 @@ export default function Loader() {
   const [loading, setLoading] = useState(true)
   const [progress, setProgress] = useState(0)
   const [showLogo, setShowLogo] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     const timer = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
@@ -44,7 +46,7 @@ export default function Loader() {
         >
           {/* Particles Background */}
           <div className="absolute inset-0 pointer-events-none">
-            {[...Array(30)].map((_, i) => (
+            {mounted && [...Array(30)].map((_, i) => (
               <motion.div
                 key={i}
                 initial={{ 
