@@ -20,8 +20,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Agency | Premium Development Studio",
-  description: "Engineering AI, SaaS & Secure Digital Products",
+  title: "FYRO | Find Your Right One",
+  description: "Premium engineering agency building high-end AI, SaaS & Digital Products.",
 };
 
 export default function RootLayout({

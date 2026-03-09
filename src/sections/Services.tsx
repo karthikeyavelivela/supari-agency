@@ -12,22 +12,28 @@ const services = [
     tags: ['Next.js', 'PostgreSQL', 'Stripe']
   },
   {
-    title: 'AI Automation',
+    title: 'AI Automation Systems',
     description: 'Integrating sophisticated neural networks to automate complex workflows and decision-making.',
     icon: Cpu,
     tags: ['LLMs', 'FastAPI', 'PyTorch']
   },
   {
-    title: 'Web Applications',
+    title: 'Web Application Development',
     description: 'Ultra-fast, responsive experiences that push the boundaries of modern frontend engineering.',
     icon: Globe,
     tags: ['React', 'TypeScript', 'Tailwind']
   },
   {
-    title: 'Mobile Applications',
+    title: 'Mobile App Development',
     description: 'Seamless native experiences for iOS and Android with focused performance optimization.',
     icon: Smartphone,
     tags: ['React Native', 'Expo', 'Swift']
+  },
+  {
+    title: 'Startup MVP Development',
+    description: 'Rapid prototyping and deployment for startups looking to launch their products quickly.',
+    icon: Layout,
+    tags: ['MVP', 'Scaling', 'Launch']
   },
   {
     title: 'Cybersecurity Reconnaissance',

@@ -2,20 +2,14 @@
 
 import dynamic from 'next/dynamic'
 import Hero from '@/sections/Hero'
-import TrustStrip from '@/sections/TrustStrip'
-import ProblemStatement from '@/sections/ProblemStatement'
 import Services from '@/sections/Services'
-import Process from '@/sections/Process'
 import Projects from '@/sections/Projects'
-import Cybersecurity from '@/sections/Cybersecurity'
 import About from '@/sections/About'
-import TechStack from '@/sections/TechStack'
 import Contact from '@/sections/Contact'
 import Footer from '@/sections/Footer'
 import { motion } from 'framer-motion'
 
 const ParticleField = dynamic(() => import('@/components/ParticleField'), { ssr: false })
-const ScrollStorytelling = dynamic(() => import('@/sections/ScrollStorytelling'), { ssr: false })
 
 export default function Home() {
   return (
@@ -31,15 +25,9 @@ export default function Home() {
         viewport={{ once: true }}
         className="relative z-10"
       >
-        <TrustStrip />
-        <ProblemStatement />
         <Services />
-        <Process />
-        <ScrollStorytelling />
         <Projects />
-        <Cybersecurity />
         <About />
-        <TechStack />
         <Contact />
         <Footer />
       </motion.div>

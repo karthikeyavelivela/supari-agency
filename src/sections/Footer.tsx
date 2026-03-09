@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
           <div className="lg:col-span-2 space-y-8">
             <Link href="#home" className="text-4xl font-heading font-black tracking-[0.2em] text-white group">
-              SUPARI<span className="text-accent group-hover:animate-pulse">.</span>
+              FYRO<span className="text-accent group-hover:animate-pulse">.</span>
             </Link>
             <p className="text-white/30 text-lg max-w-md font-medium leading-relaxed uppercase tracking-widest text-[10px]">
-              The premier task force for high-stakes digital engineering, AI automation, and cybersecurity.
+              Find Your Right One. Premium engineering studio for high-end AI, SaaS & Digital Products.
             </p>
             <div className="flex items-center gap-4">
               {[Twitter, Github, Linkedin, Mail].map((Icon, i) => (
@@ -50,9 +50,9 @@ export default function Footer() {
         </div>
 
         <div className="pt-16 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-8 text-[9px] font-black uppercase tracking-[0.5em] text-white/10">
-          <p>© {new Date().getFullYear()} SUPARI STUDIO. ALL RIGHTS RESERVED.</p>
+          <p>© {new Date().getFullYear()} FYRO. ALL RIGHTS RESERVED.</p>
           <div className="flex gap-10">
-            <span>SF // LONDON // TOKYO</span>
+            <span>STARTUP // AI // SAAS</span>
             <span className="text-accent">ENCRYPTED CONNECTION</span>
           </div>
         </div>

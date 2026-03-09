@@ -56,7 +56,7 @@ export default function Navbar() {
               onClick={(e) => scrollToSection(e, '#home')} 
               className="text-2xl font-heading font-black tracking-[0.2em] text-white group"
             >
-              SUPARI<span className="text-accent group-hover:animate-pulse">.</span>
+              FYRO<span className="text-accent group-hover:animate-pulse">.</span>
             </Link>
 
             {/* Desktop Menu */}
@@ -77,7 +77,7 @@ export default function Navbar() {
                 onClick={(e) => scrollToSection(e, '#contact')}
                 className="px-6 py-2 text-[11px] font-bold uppercase tracking-widest bg-white text-black rounded-full hover:bg-accent hover:text-white hover:shadow-[0_0_20px_rgba(139,0,0,0.5)] transition-all duration-500"
               >
-                Inquiry
+                Start Project
               </Link>
             </div>
 
@@ -140,7 +140,7 @@ export default function Navbar() {
 
             {/* Background Text */}
             <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none overflow-hidden">
-              <span className="text-[40vw] font-black font-heading leading-none">SUPARI</span>
+              <span className="text-[40vw] font-black font-heading leading-none">FYRO</span>
             </div>
           </motion.div>
         )}

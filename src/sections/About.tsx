@@ -44,10 +44,10 @@ const About = () => {
               className="space-y-6 text-lg text-white/50 font-medium leading-relaxed"
             >
               <p>
-                Supari is not just a development studio; it is an elite task force dedicated to architecting the most sophisticated digital products on the planet.
+                FYRO – Find Your Right One – is a premium engineering studio founded by <span className="text-white font-bold italic">Karthikeya Velivela</span>. We are dedicated to architecting the most sophisticated digital products for startups and global enterprises.
               </p>
               <p>
-                We believe that code is an art form, and engineering is the ultimate expression of human intelligence. Our mission is to push the boundaries of what is possible in AI, SaaS, and Cybersecurity.
+                Our mission is rooted in innovation, engineering quality, and a relentless startup mindset. We believe in building powerful software solutions that define the next generation of AI and SaaS.
               </p>
             </motion.div>
           </div>
