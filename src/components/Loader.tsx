@@ -82,7 +82,7 @@ export default function Loader() {
                     className="flex flex-col items-center"
                   >
                     <h1 className="text-5xl md:text-7xl font-heading font-black text-white tracking-[0.2em]">
-                      SUPARI
+                      FYRO
                     </h1>
                     <motion.div
                       initial={{ width: 0 }}

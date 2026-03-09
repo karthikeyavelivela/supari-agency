@@ -38,7 +38,7 @@ export default function Process() {
         >
           <span className="text-[10px] font-black uppercase tracking-[0.4em] text-accent block mb-4">Methodology</span>
           <h2 className="text-4xl md:text-6xl font-heading font-black text-white tracking-tighter uppercase">
-            The Supari Protocol
+            The FYRO Protocol
           </h2>
         </motion.div>
 
